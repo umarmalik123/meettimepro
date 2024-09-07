@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MeetTimer Pro",
+  "version": "1.0",
+  "description": "Tired of losing track during meetings? Get a countdown timer and current time directly in Google Meet!",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*-*-*?*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
